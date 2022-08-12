@@ -6,7 +6,6 @@
 //
 // Scripts
 // 
-// push plis]
 
 
 window.addEventListener('DOMContentLoaded', event => {
