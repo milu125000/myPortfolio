@@ -1,0 +1,8 @@
+.skills .chip-skill {
+    display: inline-block !important;
+    background: #e5e5ea !important;
+    color: #333 !important;
+    border-radius: 9999px !important;
+    padding: 0.35rem 0.75rem !important;
+    margin: 0.25rem !important;
+  }

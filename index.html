@@ -1,538 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- cache expirer -->
-        <meta http-equiv="Expires" content="0">
-        <meta http-equiv="Last-Modified" content="0">
-        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-        <meta http-equiv="Pragma" content="no-cache">
-        <!-- borrar -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio Milagros Sassenus</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-0 mx-lg-1"><a id="esp" class="nav-link py-3 px-0 px-lg-3 rounded" onclick="return languageChange(this);" href="#">Español</a></li>  
-                        <li class="nav-item mx-0 mx-lg-1"><a id="eng" class="nav-link py-3 px-0 px-lg-3 rounded" onclick="return languageChange(this);" href="#">English</a></li>  
-                    </ul>
-                </div>
-
-                 <!-- <button id="demo" type="button" class="text-uppercase font-weight-bold bg-primary text-white rounded" aria-controls="navbarResponsive" aria-expanded="false" onclick="myFunction()">Click me</a> -->
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-portfolio" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" ></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-skills" class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills"></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-projects" class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects"></a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Banner -->
-        <header>
-            <div class>
-                <!-- INGRESAR IMAGEN AQUI-->
-                
-                <!-- <img class="navbar-banner" src="assets/img/banner/banner.jpg" alt="..." /> -->
-             </div>
-
-        </header>
-        <!-- Masthead-->
-        <section class="masthead bg-primary text-white text-center">
-            
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Milagros Sassenus</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Full Stack Developer Jr</p>
-                <br>
-                <p id="initDesc"class="masthead-subheading font-weight-light mb-0"></p>
-            </div>
-        </section>
-    
-        <!-- profolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 id="title-portfolio" class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
-                        <!-- <div class="titulo secundario"> -->
-                        <p class="bold">Nuestra Señora Monte Grande</p>
-                        <p class="lead" id="secondary"></p>
-                        <p class="italics">2011 - 2017</p>
-                    <!-- </div> -->
-                    <br>
-                    <!-- <div class="ingles"> -->
-                        <p class="bold">Instituto Cambridge</p>
-                        <p class="lead" id="english-studies"></p>
-                        <p class="italics">2017 - 2017</p>
-                    <!-- </div> -->
-                    <br>
-                    <!-- <div class="tcp"> -->
-                        <p class="bold">IFPA</p>
-                        <p class="lead" id="tcp"></p>
-                        <p class="italics">2018 - 2018</p>
-                    <!-- </div> -->
-                    </div>
-                    <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
-                        <!-- <div class="chino"> -->
-                            <p class="bold">CEA</p>
-                            <p class="lead" id="chinese-studies"></p>
-                            <p class="italics">2018 - 2024</p>
-                        <!-- </div> -->
-                        <br>
-                        <!-- <div class="universidad"> -->
-                            <p class="bold">UNLA</p>
-                            <p class="lead" id="college"></p>
-                            <p class="italics">2019 - 2023</p>
-                        <!-- </div> -->
-                        <br>
-                        <!-- <div class="argentina programa"> -->
-                            <p class="bold">Ministerio de Producción</p>
-                            <p class="lead" id="argentina" ></p>
-                            <p class="italics">2021 - 2022</p>
-                        <!-- </div> -->
-        
-                    </div>
-                </div>
-                
-
-            </div>
-        </section>
-
-        
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="skills">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 id="title-skills" class="page-section-heading text-center text-uppercase text-secondary mb-0"></h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/git.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/sql.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/js.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/c.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/java.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/python.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="projects">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 id="title-projects" class="page-section-heading text-center text-uppercase text-white"></h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
-                        <!-- <div proyecto Portfolio> -->
-                        <p class="bold">Java, JS, Bootstrap, Spring, HTML, CSS</p>
-                        <p class="lead" id="web-portfolio"></p>
-                        <a href="https://github.com/milu125000/milu125000.github.io"  class="btn btn-primary" target="_blank">
-                            <i class="fas fa-xmark fa-fw"></i>
-                        </a>
-                        <!-- </div> -->
-                        <br><br><br><br>
-
-                        <!-- <div proyecto PYGAME> -->
-                        <p class="bold">Python , Pygame</p>
-                        <p class="lead" id="space-invaders"></p>
-                        <a href="https://github.com/diegohernanibanez/juego-pygame"  class="btn btn-primary" target="_blank">
-                            <i class="fas fa-xmark fa-fw"></i>
-                        </a>
-
-                        <br><br><br><br>
-
-                        <!-- <div proyecto MCDonalds> -->
-                            <p class="bold">JS, React</p>
-                            <p class="lead" id="mcdonalds"></p>
-                            <a tag="view-page"href="https://mc-donals-grupo-2.netlify.app" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-xmark fa-fw"></i>
-                            </a>
-                            <a href="https://github.com/camimisa/mcdonals-web"  class="btn btn-primary" target="_blank">
-                                <i class="fas fa-xmark fa-fw"></i>
-                            </a>
-                        
-                    
-                    </div>
-
-                    <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
-                        <!-- <div proyecto bot de musica> -->
-                        <p class="bold">Python</p>
-                        <p class="lead" id="musiquita"></p>
-                        <a href="https://discord.com/api/oauth2/authorize?client_id=814363090539905046&permissions=2251815936&scope=bot" class="btn btn-primary" target="_blank">
-                            <i  class="fas fa-xmark fa-fw"></i>
-                        </a>
-
-                        <!-- </div> -->
-                        <br><br><br><br>
-                        
-                        <!-- <div proyecto PYGAME> -->
-                        <p class="bold">MongoDB, Java, JSON</p>
-                        <p class="lead" id="mongo"></p>
-                        <a href="https://github.com/camimisa/FarmaciaBD2"  class="btn btn-primary" target="_blank">
-                            <i class="fas fa-xmark fa-fw"></i>
-                        </a>
-                    </div>
-                    
-                </div>
-                <!-- About Section Button-->
-                <!-- <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div> -->
-            </div>
-        </section>
-        
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    
-                    <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
-                        
-                        <h4 class="text-uppercase mb-4" id="dir"></h4>
-                        <p class="lead mb-0">
-                            Monte Grande 
-                            <br />
-                            Buenos Aires, Argentina
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
-                        <h4 class="text-uppercase mb-4" id="social"></h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/milu125000"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/milagros-sassenus-71a75316a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <!-- Footer About Text
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div> -->
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Milagros-Sassenus-Portfolio-2022 ; &copy;StartBootstrap </small></div>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Milagros Sassenus — Software Engineer</title>
+    <meta name="description" content="Portfolio de Milagros Sassenus: Software Engineer especializada en backend e infraestructura en la nube (Python, Ruby, AWS, Kubernetes)." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/8c2b7d5c22.js" crossorigin="anonymous"></script>
+    <style>
+      :root{
+        --bg:#f2f2f5; --fg:#0b0c10; --muted:#555; --accent:#7c3aed; --card:#ffffff; --chip:#e5e5ea;
+      }
+      html,body{background:var(--bg); color:var(--fg); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+      a{color:var(--accent)} a:hover{color:#5b21b6}
+      .navbar{background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.05);} 
+      .hero{padding-top:7rem; padding-bottom:4rem}
+      .card{background:var(--card); border:1px solid #ddd; box-shadow:0 2px 6px rgba(0,0,0,.05)}
+      .card .btn{border-radius:10px}
+      .section-title{font-weight:700; letter-spacing:.02em}
+      .divider{height:2px; background:linear-gradient(90deg,transparent, var(--accent), transparent)}
+      .muted{color:var(--muted)}
+      .avatar{width:110px; height:110px; border-radius:50%; object-fit:cover; border:2px solid #ccc}
+      .footer{border-top:1px solid #ddd; background:#fafafa}
+      .timeline{position:relative}
+      .timeline:before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:#ccc}
+      .timeline-item{position:relative; padding-left:2.2rem; margin-bottom:1.4rem}
+      .timeline-item:before{content:""; position:absolute; left:3px; top:.4rem; width:14px; height:14px; border-radius:50%; background:var(--accent)}
+      .lang-toggle{border:1px solid #ccc}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Milagros Sassenus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            <li class="nav-item"><button class="btn btn-sm btn-outline-dark lang-toggle" id="langBtn">ES</button></li>
+          </ul>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GIT</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/git.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="git-info" class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MYSQL</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-    
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sql.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    
-                                    <p id="sql-info"class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">JavaScript</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/js.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="js-info" class="mb-4"></p>
-                                   
-                                    <!-- <button href="https://github.com/diegohernanibanez/Grupo-05-OO2-2021" class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Saber m
-                                    </button> -->
+      </div>
+    </nav>
 
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <span class="muted" data-i18n="hero_role">Software Engineer</span>
+            <h1 class="display-5 fw-bold mt-2">Milagros Sassenus</h1>
+            <p class="lead mt-3" data-i18n="hero_tagline">Ingeniera de software con +3 años en backend e infraestructura en la nube. Python · Ruby · AWS · Kubernetes.</p>
+            <div class="mt-3">
+              <a href="https://github.com/milu125000" target="_blank" class="btn btn-dark me-2"><i class="fa-brands fa-github me-1"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/milagros-sassenus-71a75316a/" target="_blank" class="btn btn-outline-dark"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a>
             </div>
+          </div>
         </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">C</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/c.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4" id="c-info"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Java</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/java.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="java-info" class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">PYTHON</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/python.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="python-info" class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/get-info.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  
+      </div>
+    </header>
 
-        
-    </body>
+    <main>
+      <!-- Experience & Education -->
+      <section id="experience" class="py-5">
+        <div class="container">
+          <h2 class="section-title h3" data-i18n="exp_title">Experiencia & Educación</h2>
+          <div class="divider mb-4"></div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h3 class="h5 mb-3" data-i18n="exp_experience">Experiencia</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h4 class="h6 mb-1">Mercado Libre — Software Engineer</h4>
+                  <div class="muted mb-2">2023 – Presente</div>
+                  <p class="mb-0" data-i18n="exp_meLi">Servicios backend y plataforma en AWS/Kubernetes. Mejora de performance, observabilidad y despliegues.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h5 mb-3" data-i18n="exp_education">Educación</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h4 class="h6 mb-1">Universidad Nacional de Lanús — Lic. en Cs. de la Computación</h4>
+                  <div class="muted mb-2">2019 – 2023</div>
+                </div>
+                <div class="timeline-item">
+                  <h4 class="h6 mb-1">Cambridge — Inglés C1 (CAE)</h4>
+                  <div class="muted mb-2">2017</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Skills -->
+       <section id="skills" class="py-5">
+        <div class="container">
+          <h2 class="section-title h3" data-i18n="skills_title">Skills principales</h2>
+          <div class="divider mb-4"></div>
+          <div class="skills">
+            <span class="chip-skill">Python</span>
+            <span class="chip-skill">Ruby</span>
+            <span class="chip-skill">AWS</span>
+            <span class="chip-skill">Docker</span>
+            <span class="chip-skill">Kubernetes</span>
+            <span class="chip-skill">CI/CD</span>
+            <span class="chip-skill">SQL/NoSQL</span>
+            <span class="chip-skill">Microservices</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="section-title h3" data-i18n="projects_title">Proyectos</h2>
+          <div class="divider mb-4"></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title" data-i18n="p1_title">Web Portfolio</h5>
+                  <p class="card-text muted">Java · JS · Bootstrap · Spring</p>
+                  <p class="card-text" data-i18n="p1_text">Sitio estático responsive con buenas prácticas de accesibilidad.</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex gap-2">
+                  <a class="btn btn-dark" href="https://github.com/milu125000/milu125000.github.io" target="_blank"><i class="fa-solid fa-code"></i> Repo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title" data-i18n="p3_title">McDonalds UI</h5>
+                  <p class="card-text muted">JS · React</p>
+                  <p class="card-text" data-i18n="p3_text">UI de e-commerce con rutas y componentes reutilizables.</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex gap-2">
+                  <a class="btn btn-dark" href="https://mc-donals-grupo-2.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+                  <a class="btn btn-outline-dark" href="https://github.com/camimisa/mcdonals-web" target="_blank"><i class="fa-solid fa-code"></i> Repo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title" data-i18n="p4_title">Discord Music Bot</h5>
+                  <p class="card-text muted">Python</p>
+                  <p class="card-text" data-i18n="p4_text">Bot con comandos, colas de reproducción y manejo de errores.</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex gap-2">
+                  <a class="btn btn-dark" href="https://discord.com/api/oauth2/authorize?client_id=814363090539905046&permissions=2251815936&scope=bot" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Invite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="section-title h3" data-i18n="contact_title">Contacto</h2>
+          <div class="divider mb-3"></div>
+          <p class="muted" data-i18n="contact_text">Abierta a roles con reubicación internacional y trabajo remoto.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-dark" href="mailto:milagros.sassenus@gmail.com"><i class="fa-solid fa-envelope me-1"></i> Email</a>
+            <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/milagros-sassenus-71a75316a/" target="_blank"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a>
+            <span class="ms-auto muted"><i class="fa-solid fa-location-dot me-1"></i> Monte Grande, Buenos Aires, AR</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-4 mt-3">
+      <div class="container d-flex justify-content-between">
+        <small class="muted">© <span id="year"></span> Milagros Sassenus</small>
+        <small class="muted">Hecho con Bootstrap 5</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const strings = {
+        es:{nav_experience:'Experiencia',nav_skills:'Skills',nav_projects:'Proyectos',nav_contact:'Contacto',hero_role:'Software Engineer',hero_tagline:'Ingeniera de software con +3 años en backend e infraestructura en la nube. Python · Ruby · AWS · Kubernetes.',exp_title:'Experiencia & Educación',exp_experience:'Experiencia',exp_education:'Educación',exp_meLi:'Servicios backend y plataforma en AWS/Kubernetes. Mejora de performance, observabilidad y despliegues.',skills_title:'Skills principales',projects_title:'Proyectos',p1_title:'Web Portfolio',p1_text:'Sitio estático responsive con buenas prácticas de accesibilidad.',p3_title:'McDonalds UI',p3_text:'UI de e-commerce con rutas y componentes reutilizables.',p4_title:'Discord Music Bot',p4_text:'Bot con comandos, colas de reproducción y manejo de errores.',contact_title:'Contacto',contact_text:'Abierta a roles con reubicación internacional y trabajo remoto.'},
+        en:{nav_experience:'Experience',nav_skills:'Skills',nav_projects:'Projects',nav_contact:'Contact',hero_role:'Software Engineer',hero_tagline:'Software engineer with 3+ years in backend and cloud. Python · Ruby · AWS · Kubernetes.',exp_title:'Experience & Education',exp_experience:'Experience',exp_education:'Education',exp_meLi:'Backend and platform services on AWS/Kubernetes. Performance, observability and deployments.',skills_title:'Core skills',projects_title:'Projects',p1_title:'Web Portfolio',p1_text:'Static site with responsive design and accessibility best practices.',p3_title:'McDonalds UI',p3_text:'E-commerce UI with routes and reusable components.',p4_title:'Discord Music Bot',p4_text:'Bot with commands, play queues and error handling.',contact_title:'Contact',contact_text:'Open to international relocation and remote work.'}
+      };
+      function setLang(lang){
+        const map=strings[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=map[el.getAttribute('data-i18n')]});
+        document.getElementById('langBtn').textContent=lang.toUpperCase();
+        document.documentElement.lang=lang;
+        localStorage.setItem('lang',lang);
+      }
+      const initial=localStorage.getItem('lang')||'es';
+      setLang(initial);
+      document.getElementById('langBtn').addEventListener('click',()=> setLang(document.documentElement.lang==='es'?'en':'es'));
+    </script>
+  </body>
 </html>
